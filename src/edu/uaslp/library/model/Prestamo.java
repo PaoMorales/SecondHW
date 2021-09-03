@@ -1,3 +1,8 @@
+package edu.uaslp.library.model;
+
+import edu.uaslp.library.model.Empleado;
+import edu.uaslp.library.model.Libro;
+
 import java.time.LocalDateTime;
 
 public class Prestamo {

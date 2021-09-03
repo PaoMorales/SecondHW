@@ -1,15 +1,11 @@
+package edu.uaslp.library.model;
+
 public class Libro {
     private String author;
     private String isbn;
     private String title;
     private String editorial;
 
-    public Libro(String author, String isbn, String title, String editorial) {
-        this.author = author;
-        this.isbn = isbn;
-        this.title = title;
-        this.editorial = editorial;
-    }
 
     public String getAuthor() {
         return author;

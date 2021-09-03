@@ -1,3 +1,5 @@
+package edu.uaslp.library.model;
+
 import java.time.LocalDate;
 
 public class Usuario {
@@ -7,16 +9,6 @@ public class Usuario {
     private String email;
     private LocalDate registerDate;
     private String addres;
-
-    public Usuario(String nombre, String clave, String phone, String email, LocalDate registerDate, String addres) {
-        this.nombre = nombre;
-        this.clave = clave;
-        this.phone = phone;
-        this.email = email;
-        this.registerDate = registerDate;
-        this.addres = addres;
-    }
-
 
     public void setNombre(String nombre) {
         this.nombre = nombre;

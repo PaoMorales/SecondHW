@@ -1,3 +1,5 @@
+package edu.uaslp.library.model;
+
 public class Empleado {
     private String name;
     private String clave;
