@@ -1,15 +1,16 @@
 package edu.uaslp.library.model;
 
-import edu.uaslp.library.model.Empleado;
-import edu.uaslp.library.model.Libro;
+import java.time.LocalDateTime;
+import java.util.LinkedList;
 
 import java.time.LocalDateTime;
 
 public class Prestamo {
     private Usuario usuario;
     private Empleado empleado;
-    private Libro[] libros;
+    private LinkedList<Libro> libros = new LinkedList<Libro>();
     private LocalDateTime fechaHora;
+
 
     public Usuario getUsuario() {
         return usuario;
@@ -17,6 +18,10 @@ public class Prestamo {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public void addLibros(Libro libro) {
+        libros.add(libro);
     }
 
     public Empleado getEmpleado() {
@@ -27,13 +32,10 @@ public class Prestamo {
         this.empleado = empleado;
     }
 
-    public Libro[] getLibros() {
+    public LinkedList<Libro> getLibros() {
         return libros;
     }
 
-    public void setLibros(Libro[] libros) {
-        this.libros = libros;
-    }
 
     public LocalDateTime getFechaHora() {
         return fechaHora;
